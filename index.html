@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wildlife Shorts</title>
+<meta name="description" content="Wildlife Shorts is a private desktop tool used by the getpsyched! YouTube channel to upload and schedule its own animal Shorts through the YouTube Data API.">
+<style>
+  :root { --fg:#1d2329; --muted:#56606b; --bg:#fbfaf7; --line:#e2ded6; --accent:#2f6f4f; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#e9ecef; --muted:#a7b0b8; --bg:#15191d; --line:#2b3238; --accent:#7cc39c; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:40px 16px 64px; }
+  h1 { font-size:2rem; margin:0 0 4px; } h2 { font-size:1.2rem; margin-top:2rem; }
+  p.lead { color:var(--muted); margin-top:0; }
+  a { color:var(--accent); } ul { padding-left:1.2rem; }
+  nav, footer { border-top:1px solid var(--line); margin-top:2.5rem; padding-top:1rem; color:var(--muted); font-size:.95rem; }
+  code { font-size:.92em; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Wildlife Shorts</h1>
+  <p class="lead">A private desktop tool that the <strong>getpsyched!</strong> YouTube channel
+    (@getpsychedmix1) uses to publish its own short animal videos.</p>
+
+  <h2>What the app does</h2>
+  <ul>
+    <li>Builds short vertical videos on the channel owner's own computer, from licensed stock footage and original
+      music, sound effects, captions and synthetic narration.</li>
+    <li>Uploads each finished video to the getpsyched! channel as <strong>private</strong>, sets its title,
+      description and custom thumbnail, and schedules the publish time, using the YouTube Data API.</li>
+    <li>Reads back the video status to confirm the upload and the schedule, and records the result in local logs.</li>
+  </ul>
+
+  <h2>Who can use it</h2>
+  <p>Only the owner of the getpsyched! channel. The app is not offered to the public, has no user accounts and no
+    sign-up. It runs as a command-line program on one personal computer and refuses to work with any other
+    channel.</p>
+
+  <h2>Google sign-in and permissions</h2>
+  <p>The channel owner signs in once with Google (OAuth 2.0 for desktop apps) and grants two YouTube scopes:</p>
+  <ul>
+    <li><code>youtube.upload</code>: upload videos and set thumbnails;</li>
+    <li><code>youtube.force-ssl</code>: update the metadata and schedule of the channel's own videos and read the
+      channel and video status.</li>
+  </ul>
+  <p>The app never deletes videos and never acts on other channels. Details of what is stored and shared are in the
+    <a href="privacy.html">Privacy Policy</a>.</p>
+
+  <p>Wildlife Shorts uses YouTube API Services. By using it you are also bound by the
+    <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the
+    <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+  <nav>
+    <a href="privacy.html">Privacy Policy</a> ·
+    <a href="terms.html">Terms of Service</a> ·
+    Contact: <a href="mailto:getpsychedmix1@gmail.com">getpsychedmix1@gmail.com</a>
+  </nav>
+  <footer>Wildlife Shorts · operated by the getpsyched! channel · last updated October 23, 2026</footer>
+</main>
+</body>
+</html>
